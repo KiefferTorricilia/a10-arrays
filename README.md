@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+# Renderizaçao de listas
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Caso não lembre como funciona o processo de entrega, clique [**aqui**](https://github.com/labenuexercicios/instrucoes-entrega)
 
-## Available Scripts
 
-In the project directory, you can run:
+## Como eu vou executar os exercícios?
+Para o exercício de hoje, vamos utilizar um template! Dentro desse template vocês vão encontrar a mesma estrutura trabalhada em aula
 
-### `npm start`
+Para executar este exercício, você pode criar uma nova aplicação React, utilizar o **CodeSandbox** ou usar este template do repositório.
+- Caso use este template, lembre-se de dar um `npm install` assim que baixar! 
+- Caso estiver usando o codeSandBox, pode usar esse template aqui: https://codesandbox.io/s/renderizacao-de-listas-jhvr3q?file=/src/App.js
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Caso queira criar uma nova aplicação React, basta copiar os conteúdos deste repositório e colar dentro da pasta do seu projeto criado.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+# Exercício 1
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Primeiro, vamos analisar todo o código que vocês estão recebendo.
+Perceba que esse código já traz os exercícios de aula resolvidos, então você só vai precisar trabalhar na adição das funcionalidades que vamos pedir a seguir: 
 
-### `npm run build`
+Hoje no nosso projeto só é possível adicionar uma nova tarefa quando clicamos no botão. Adicione uma funcionalidade para que seja possível enviar a nova tarefa também usando a tecla ENTER.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Exercício 2
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Hoje o nosso aplicativo apenas mostra na tela uma lista de tarefas que podemos adicionar uma a uma. Mas algumas funcionalidades a mais poderiam fazer essa aplicação se tornar mais realista. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Crie, abaixo da lista de tarefas, uma nova lista de tarefas já completadas. Ela vai funcionar da seguinte maneira: 
+    - Conforme o usuário clica no botão de apagar uma tarefa, ela sai da lista de tarefas e entra na lista de baixo, onde ela passa a aparecer com um risco ~~assim~~ e um pouco mais opaca. Por exemplo: 
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![Screen Shot 2022-10-24 at 17 09 25](https://user-images.githubusercontent.com/71241157/197619179-cd81f78a-bf14-47bc-bb4f-3898416cc7b6.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Faça com que esse essa lista de tarefas completadas seja um Componente separado e apenas chame ele no `ListaTarefas.js`. Lembre-se de fazer a estilização adequada para que ele tenha a aparência pedida. Outra característica, segundo a imagem acima, é que as tarefas completadas não tem um botão de remover tarefa, lembre-se disso! 
